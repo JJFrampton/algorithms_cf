@@ -1,0 +1,35 @@
+def chessBoardCellColor(cell1, cell2)
+    puts "here"
+    a = cell1.chars
+    b = cell2.chars
+    a = calc(a)
+    b = calc(b)
+    if a == b
+        return true
+    else
+        return false
+    end
+end
+
+def calc(a)
+    puts a
+    a_g = ['A','C','E','G']
+    # b_h = [b,d,f,h]
+    if a[1].to_i.odd?
+        dark = a_g
+        # light = b_h
+        if dark.include? a[0]
+            return 'dark'
+        else
+          return 'light'
+        end
+    else
+        light = a_g
+        # dark = b_h
+        if light.include? a[0]
+            return 'light'
+        else
+          return 'dark'
+        end
+    end
+end

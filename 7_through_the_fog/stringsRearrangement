@@ -1,0 +1,31 @@
+def stringsRearrangement(inputArray)
+    inputArray = inputArray.permutation.to_a
+    p inputArray
+    inputArray.each do |arr|
+        i = 0
+        while i < arr.length - 1
+            break unless compare(arr[i], arr[i+1])
+            p "not break"
+            i += 1
+        end
+        return true
+    end
+end
+
+def compare(word1, word2)
+    i = 0
+    differences = 0
+    word1 = word1.chars
+    word2 = word2.chars
+    while i < word1.length
+        if word1[i] != word2[i]
+            differences += 1
+            if differences > 1
+                return false
+            end
+        end
+        i += 1
+    end
+    return false unless differences == 1
+    return true
+end

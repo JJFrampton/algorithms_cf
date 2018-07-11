@@ -1,0 +1,11 @@
+def depositProfit(deposit, rate, threshold)
+    funds = deposit
+    years = 0
+    rate = rate.to_f / 100.00
+    rate = rate + 1
+    while funds < threshold
+        funds = funds * rate
+        years += 1
+    end
+    return years
+end

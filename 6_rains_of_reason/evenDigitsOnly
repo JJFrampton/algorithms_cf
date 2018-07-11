@@ -1,0 +1,6 @@
+def evenDigitsOnly(n)
+	n = n.to_s
+    n = n.chars
+    n.each {|x| if x.to_i.odd? then return false end}
+    return true
+end

@@ -1,0 +1,52 @@
+def minesweeper(matrix)
+    new_matrix = []
+    i = 0
+    while i < matrix.length
+        new_line = []
+        n = 0
+        while n < matrix[i].length
+            if matrix[i][n] == true
+                new_line.push(calc(matrix, i, n) - 1)
+            else
+            	new_line.push(calc(matrix, i, n))
+            end
+            n += 1
+        end
+        new_matrix.push(new_line)
+        i += 1
+    end
+    return new_matrix
+end
+
+def calc(a, row, col)
+    x_start = -1
+    x_stop = +1
+    y_start = -1
+    y_stop = +1
+    case row
+        when 0
+        y_start = 0
+        when a.length - 1
+        y_stop = 0
+    end
+    case col
+        when 0
+        x_start = 0
+        when a[row].length - 1
+        x_stop = 0
+    end
+    count = 0
+    i = y_start
+    while i <= y_stop
+        n = x_start
+        while n <= x_stop
+            	if a[row + i][col + n] == true
+                    puts "#{[row + i]} x #{[col + n]} is true"
+                    count += 1
+              end
+              n +=1
+        end
+        i += 1
+    end
+    return count
+end

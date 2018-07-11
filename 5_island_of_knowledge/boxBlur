@@ -1,0 +1,31 @@
+def boxBlur(image)
+    a = image
+    b = []
+    row = 1
+    row_length = a.length - 1
+    while row < row_length
+    	returned_row = []
+    	col = 1
+    	col_length = a[row].length - 1
+    	while col < col_length
+			returned_row.push(calc(a, row, col))
+            col += 1
+    	end
+        b.push(returned_row)
+        row += 1
+    end
+    return b
+end
+
+def calc(a, row, col)
+    total = a[row-1][col-1] +
+    a[row-1][col] +
+    a[row-1][col+1] +
+    a[row][col-1] +
+    a[row][col] +
+    a[row][col+1] +
+    a[row+1][col-1] +
+    a[row+1][col] +
+    a[row+1][col+1]
+    return total / 9
+end

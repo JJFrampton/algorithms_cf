@@ -1,0 +1,4 @@
+# short method
+def extractEachKth(inputArray, k)
+    inputArray.reject.with_index { |x,i| (i+1) % k == 0 }
+end

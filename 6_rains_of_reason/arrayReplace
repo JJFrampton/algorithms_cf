@@ -1,0 +1,9 @@
+def arrayReplace(inputArray, elemToReplace, substitutionElem)
+    inputArray.map! do |x|
+        if x == elemToReplace
+            x = substitutionElem
+        else
+            x = x
+        end
+    end
+end

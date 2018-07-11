@@ -1,0 +1,6 @@
+def isIPv4Address(inputString)
+    return false unless (/^(\d{1,3}\.){3}\d{1,3}$/ =~ inputString) == 0
+    arr = inputString.split('.')
+    arr.each {|n| if n.to_i > 255; return false end}
+    return true
+end

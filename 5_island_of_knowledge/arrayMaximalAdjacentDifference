@@ -1,0 +1,17 @@
+def arrayMaximalAdjacentDifference(inputArray)
+    diff=0
+    a = inputArray
+    i=1
+    d = a[0] - a[1]
+    diff = d unless d <= diff
+    d = a[a.length - 1] - a[a.length - 2]
+    diff = d unless d <= diff
+    while i < a.length - 1
+        lDiff = a[i] - a[i-1]
+        rDiff = a[i] - a[i+1]
+        diff = lDiff unless lDiff <= diff
+        diff = rDiff unless rDiff <= diff
+        i += 1
+    end
+    return diff
+end

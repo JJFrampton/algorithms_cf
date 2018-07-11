@@ -1,0 +1,25 @@
+def arrayMaxConsecutiveSum(inputArray, k)
+#   easy way is too slow, dont need to sum every time
+#   only need to adjust for the difference at begining and end
+
+#   steps
+#   sum the sub array 0 - k
+#   iterate through the main array starting at 1 not 0
+#       shift the array, removing the first item and add in inputArray[i + k]
+
+  i = 1
+  j = i + (k - 1)
+  sub_array = inputArray[0,k]
+  sum = sub_array.inject(0, &:+)
+  test_sum = sum
+  p test_sum
+  while j < inputArray.length
+    test_sum += inputArray[j]
+    test_sum -= inputArray[i-1]
+    p test_sum
+    sum = test_sum unless test_sum <= sum
+    i += 1
+    j += 1
+  end
+  return sum
+end

@@ -1,0 +1,7 @@
+def differentSymbolsNaive(s)
+    num = 0
+    char = []
+    s = s.chars
+    s.each { |a| (num += 1; char.push(a)) unless char.include? a}
+    return num
+end

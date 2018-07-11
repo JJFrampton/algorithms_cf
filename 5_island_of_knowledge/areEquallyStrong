@@ -1,0 +1,16 @@
+def areEquallyStrong(myLeft, myRight, friendLeft, friendRight)
+    me = [myRight, myLeft]
+     friend = [friendRight, friendLeft]
+     if friend.include?(me[0])
+         # friend.delete(me[0])
+         # friend.slice!(friend.index(me[0]))
+         friend.delete_at( friend.index(me[0]) )
+         if friend.include?(me[1])
+             return true
+         else
+             return false
+         end
+     else
+         return false
+     end
+end

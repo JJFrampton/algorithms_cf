@@ -1,0 +1,8 @@
+def circleOfNumbers(n, firstNumber)
+    a = n / 2 + firstNumber
+    if a >= n
+        return a - n
+    else
+        return a
+    end
+end

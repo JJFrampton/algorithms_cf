@@ -1,0 +1,3 @@
+def firstDigit(inputString)
+    return inputString.match(/^(.*?)?(\d)/)[2]
+end

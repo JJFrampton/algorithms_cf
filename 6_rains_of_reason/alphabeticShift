@@ -1,0 +1,22 @@
+def alphabeticShift(inputString)
+  alpha = get_alpha()
+  change = inputString.chars
+  change.map! do |c|
+    c = alpha[c]
+  end
+  return change.join
+end
+
+def get_alpha()
+  alpha = *('a'..'z')
+  a = {}
+  alpha.each_with_index do |x, i|
+    if i+1 == alpha.length
+      l = alpha[0]
+    else
+      l = alpha[i+1]
+    end
+    a[x] = l
+  end
+  return a
+end

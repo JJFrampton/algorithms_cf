@@ -1,0 +1,14 @@
+def absoluteValuesSumMinimization(a) 
+    main = ['n']
+    a.each_with_index do |b, i|
+        total = 0
+        a.each_with_index do |c, n|
+            total += (c - b).abs
+        end
+        if main[0] == 'n' || total < main[0]
+            main[0] = total
+            main[1] = b
+        end
+    end
+    return main[1]
+end

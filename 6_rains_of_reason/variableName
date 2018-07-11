@@ -1,0 +1,5 @@
+def variableName(name)
+  return false unless /\D/ =~ name.chars[0]
+  return false unless /^[a-zA-Z\d_]*$/ =~ name
+  return true
+end
