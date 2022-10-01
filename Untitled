@@ -1,0 +1,61 @@
+Key colors:
+
+ESC   1u DSA 1 Red
+Q     1u DSA 6 Skyblue
+W     1u DSA 6 Skyblue
+E     1u DSA 6 Skyblue
+R     1u DSA 6 Skyblue
+T     1u DSA 6 Skyblue
+Y     1u DSA 10 Darkblue
+U     1u DSA 10 Darkblue
+I     1u DSA 10 Darkblue
+O     1u DSA 6 Skyblue
+P     1u DSA 6 Skyblue
+BACK SPACE  DSA 10 Darkblue
+
+TAB   1u DSA 10 Darkblue
+A     1u DSA 10 Darkblue
+S     1u DSA 10 Darkblue
+D     1u DSA 10 Darkblue
+F     1u DSA 10 Darkblue
+G     1u DSA 6 Skyblue
+H     1u DSA 10 Darkblue
+J     1u DSA 6 Skyblue
+K     1u DSA 6 Skyblue
+L     1u DSA 10 Darkblue
+;     1u DSA 6 Skyblue
+-     1u DSA 10 Darkblue
+
+SHIFT 1u DSA 10 Darkblue
+Z     1u DSA 6 Skyblue
+X     1u DSA 6 Skyblue
+C     1u DSA 6 Skyblue
+V     1u DSA 6 Skyblue
+B     1u DSA 6 Skyblue
+N     1u DSA 10 Darkblue
+M     1u DSA 10 Darkblue
+,     1u DSA 10 Darkblue
+.     1u DSA 6 Skyblue
+/     1u DSA 6 Skyblue
+RETURN  1u DSA 1 Red
+
+BLANK 1u DSA 6 Skyblue
+CTRL  1u DSA 10 Darkblue
+ALT   1u DSA 10 Darkblue
+O/S   1u DSA 10 Darkblue
+LOWER 1u DSA 6 Skyblue
+2u BLANK 1u DSA 10 Darkblue
+RAISE 1u DSA 6 Skyblue
+LEFT  1u DSA 6 Skyblue
+DOWN  1u DSA 6 Skyblue
+UP    1u DSA 6 Skyblue
+RIGHT 1u DSA 6 Skyblue
+
+BLANK 1u DSA 10 Darkblue
+BLANK 1u DSA 10 Darkblue
+BLANK 1u DSA 6 Skyblue
+BLANK 1u DSA 6 Skyblue
+
+ DSA 10 Darkblue
+ DSA 1 Red
+ DSA 6 Skyblue
